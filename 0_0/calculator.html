@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Basic Math Calculator</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Basic +,-,*,/ calculator implemented in HTML, Stylus, and JS"/>
+    <meta name="keywords" content="calculator, math, web, html, stylus, js, javascript"/>
+    <meta name="author" content="Dor Rondel"/>
+    <meta name="language" content="english"/> 
+    <link rel="stylesheet" type="text/css" href="../styles/calculator.css"></link>
+  </head>
+  <body>
+    <h1>Basic Math Calculator</h1>
+    <div class="instructions">
+      <p>
+        From <em>left</em> to <em>right.</em><br/>
+        Enter a <strong>number</strong> in the first box.<br/>
+        Enter a <strong>mathematical operator </strong>in the second box [+, -, *, /].<br/>
+        Enter a <strong>number</strong> in the third box.<br/>
+      </p>
+    </div>
+    <main>
+      <ul id="boxes">
+        <li>
+          <input type="text" name="num1" placeholder="First Number"/>
+        </li>
+        <li>
+          <input type="text" name="op" placeholder="Mathematical Operator"/>
+        </li>
+        <li>
+          <input type="text" name="num2" placeholder="Second Number"/>
+        </li>
+      </ul>
+      <b><h2 id="sum">Solution: </h2></b>
+    </main>
+    <script type="text/javascript" src="../scripts/calculator.js"></script>
+  </body>
+</html>
