@@ -1,0 +1,69 @@
+doctype html
+html(lang="en")
+  head
+    title BBCode-to-HTML Converter
+    meta(charset="utf-8")
+    meta(name="description" content="HTML to BBCode converter")
+    meta(name="keywords" content="BBCode, HTML, Markup")
+    meta(name="author" content="Dor Rondel")
+    meta(name="language" content="english")
+    link(rel="stylesheet" type="text/css" href="./bbcode.css")
+  body
+    div.graphic
+      h3 Reference Table
+      table(border="1")
+        tr
+          td BBCode Tag
+          td HTML Equivalent
+          td Action
+        tr
+          td [s] .. [/s]
+          td &lts&gt 
+          td Strike Through
+        tr
+          td [i] .. [/i]
+          td &ltem&gt
+          td Italics
+        tr
+          td [b] .. [/b]
+          td &ltstrong&gt
+          td Bolded Text
+        tr
+          td [u] .. [/u]
+          td &ltu&gt
+          td Underline
+        tr
+          td [noparse] .. [/noparse]
+          td &ltpre&gt
+          td Preserved Text
+        tr
+          td [url] .. [/url]
+          td &lta&gt
+          td Link
+        tr
+          td [sup] .. [/sup]
+          td &ltsup&gt
+          td Superscript
+        tr
+          td [sub]
+          td &ltsub&gt
+          td Subsript
+        tr
+          td [small]
+          td &ltsmall&gt
+          td Small Font
+        tr
+          td [quote] .. [/quote] 
+          td &ltblockquote&gt
+          td Quotation
+    main
+      h1 BBCode-to-HTML Converter
+      p.instructions
+        strong Enter your BBCode below
+      br
+      div.input
+        textarea(name="input" placeholder="Enter BBCode")
+        br
+        input(type="submit" value="Submit!")
+        p(id="output")
+    script(type="text/javascript" src="./bbcode.js")
