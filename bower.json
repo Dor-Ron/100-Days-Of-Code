@@ -1,0 +1,31 @@
+{
+  "name": "100-Days-Of-Code",
+  "homepage": "https://github.com/Dor-Ron/100-Days-Of-Code",
+  "authors": [
+    "Dor Rondel <dor.rondel@gmail.com>"
+  ],
+  "description": "100 \"consecutive\" (not really) days of small web dev projects",
+  "main": "none",
+  "keywords": [
+    "Web",
+    "Development",
+    "Javascript",
+    "Jade",
+    "HTML",
+    "CSS",
+    "Stylus",
+    "ES6",
+    "Bower"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
