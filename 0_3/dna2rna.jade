@@ -1,0 +1,27 @@
+doctype html
+
+html(lang="en")
+  head
+    title DNA <=> RNA
+    meta(charset="utf-8")
+    meta(name="language" content="english")
+    meta(name="keywords" content="DNA, RNA, Biology, Genetics")
+    meta(name="description" content="DNA coneversion to RNA and vice versa")
+    meta(name="author" content="Dor Rondel")
+    link(rel="stylesheet" type="text/css" href="./dna2rna.css")
+  body
+    main
+      h1 DNA <=> RNA
+      textarea(placeholder="Enter nucleotide sequence here: ")
+      br
+      br
+      select
+        option(value="d2r") DNA => RNA
+        option(value="r2d") RNA => DNA
+      br
+      br
+      input(type="submit")
+      br
+      h3(id="output")
+    script(src="../bower_components/jquery/dist/jquery.min.js")
+    script(src="./dna2rna.js")
