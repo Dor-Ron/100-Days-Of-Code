@@ -3,7 +3,6 @@
     init: function(){
       this.cacheDOM();
       this.bindEvent();
-      console.log(typeof this.getValue);
     },
     cacheDOM: function() {
       this.num1 = document.getElementsByName('num1')[0];
@@ -25,7 +24,7 @@
       this.solution = 0;
       this.getValue();
       if (this.op === "+") {
-          this.solution = parseFloat(this.first) + parseFloat(this.second);
+        this.solution = parseFloat(this.first) + parseFloat(this.second);
       } else if (this.op === "-") {
         this.solution = parseFloat(this.first) - parseFloat(this.second);
       } else if (this.op === "*") {
